@@ -92,8 +92,12 @@ class Line(line : String) {
 
 
 
+Just before Project Step 6:
+if (currentWord != "") {
+    words.add(currentWord)
+}
 
-P89
+Project Step 10.7:
 @Test fun doubleSpace() {
     val line = Line("a  b")
     val words = line.words()
