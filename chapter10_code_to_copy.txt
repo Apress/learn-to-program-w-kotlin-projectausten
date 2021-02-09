@@ -142,7 +142,6 @@ class Line(line: String) {
 
 
 Project Step 10.9:
-P90
 @Test fun wordsAreLowerCase() {
     val line = Line("Hello THERE")
     val words = line.words()
