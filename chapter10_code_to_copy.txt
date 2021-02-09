@@ -150,7 +150,12 @@ Project Step 10.9:
     Assert.assertEquals("there", words[1])
 }
 
-
+Just before Project Step 10.1o:
+fun addWord(str: String) {
+    if (str != "") {
+        words.add(str.toLowerCase())
+    }
+}
 
 Project Step 10.11:
 package lpk.austen
