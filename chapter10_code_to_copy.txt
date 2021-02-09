@@ -579,6 +579,13 @@ fun isWord(str: String) : Boolean {
     return true
 }
 
+Using this, addWord becomes:
+fun addWord(str: String) {
+    if (isWord(str)) {
+        words.add(str.toLowerCase())
+    }
+}
+
 
 Project Step 10.34:
 fun isWord(str: String) : Boolean {
