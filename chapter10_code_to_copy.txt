@@ -595,6 +595,39 @@ fun isWord(str: String) : Boolean {
 }
 
 
+Project Step 10.35:
+package lpk.austen
+
+import java.nio.file.Path
+import java.nio.file.Files
+
+/**
+ * Collects word usage data.
+ */
+class Histogram {
+
+    val counter = mutableMapOf<String, Int>()
+
+    fun record(word: String) {
+        val currentCount = counter[word] ?: 0
+        val newCount = currentCount + 1
+        counter.put(word, newCount)
+    }
+
+    fun allWords(): Set<String> {
+        return counter.keys
+    }
+
+    fun numberOfTimesGiven(word: String): Int {
+        return counter[word] ?: 0
+    }
+
+    fun totalWords() : Int {
+        return 0
+    }
+}
+
+
 Project Step 10.36:
 @Test
 fun totalNumberOfWords() {
