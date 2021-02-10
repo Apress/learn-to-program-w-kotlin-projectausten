@@ -101,7 +101,7 @@ Project Step 10.7:
 @Test fun doubleSpace() {
     val line = Line("a  b")
     val words = line.words()
-    Assert.assertEquals(2, words.size.toLong())
+    Assert.assertEquals(2, words.size)
     Assert.assertEquals("a", words[0])
     Assert.assertEquals("b", words[1])
 }
@@ -145,7 +145,7 @@ Project Step 10.9:
 @Test fun wordsAreLowerCase() {
     val line = Line("Hello THERE")
     val words = line.words()
-    Assert.assertEquals(2, words.size.toLong())
+    Assert.assertEquals(2, words.size)
     Assert.assertEquals("hello", words[0])
     Assert.assertEquals("there", words[1])
 }
@@ -253,7 +253,7 @@ fun recordTwoWords() {
     histogram.record("piano")
     histogram.record("violin")
     val words = histogram.allWords()
-    Assert.assertEquals(2, words.size.toLong())
+    Assert.assertEquals(2, words.size)
     Assert.assertTrue(words.contains("piano"))
     Assert.assertTrue(words.contains("violin"))
     Assert.assertEquals(1, histogram.numberOfTimesGiven("piano"))
